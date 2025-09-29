@@ -1,0 +1,34 @@
+server:
+  port: 9396
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8186/eureka
+  instance:
+    hostname: localhost
+
+spring:
+  application:
+    name: ms-gateway-server
+
+  cloud:
+    gateway:
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: true
+              lower-case-service-id: true
+          routes:
+            - id: ms-matricula
+              uri: lb://ms-matricula
+              predicates:
+                - Path=/matriculas/**
+            - id: ms-curso
+              uri: lb://ms-curso
+              predicates:
+                - Path=/cursos/**
+              # Si tu servicio real no expone /categoria/...:
+              # filters:
+              #   - StripPrefix=1

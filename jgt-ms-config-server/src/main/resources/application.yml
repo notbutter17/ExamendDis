@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/notbutter17/ExamendDis.git
+          uri: https://github.com/notbutter17/ExamendDis.git # repositorio
           searchPaths:
             - jgt-config-data
           default-label: main

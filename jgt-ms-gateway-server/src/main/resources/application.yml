@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ms-gateway-service
+    name: jgt-ms-gateway-service
   profiles:
     active: development
   config:

@@ -3,10 +3,10 @@ spring:
     name: jgt-ms-curso-service
 
   datasource:
-    url: jdbc:mysql://localhost:3309/cursos1?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/cursos1?useSSL=false&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: 124578369scar@
+    password: 
 
   jpa:
     hibernate:

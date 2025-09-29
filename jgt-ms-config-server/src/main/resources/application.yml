@@ -9,9 +9,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/markmercado1/ExamenDadU1.git # repositorio
+          uri: https://github.com/notbutter17/ExamendDis.git
           searchPaths:
-            - config-data
+            - jgt-config-data
           default-label: main
 
   security:

@@ -1,9 +1,12 @@
 package com.cmm.jgtmsconfigserver;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.config.server.EnableConfigServer;
 
-@SpringBootTest
+@EnableConfigServer
+
+@SpringBootApplication
 class JgtMsConfigServerApplicationTests {
 
     @Test

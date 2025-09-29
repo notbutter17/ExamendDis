@@ -1,6 +1,6 @@
 spring:
   application:
-    name: jgt-ms-curso-service
+    name: jgt-ms_curso
   profiles:
     active: development
   config:
